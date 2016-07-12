@@ -7,3 +7,5 @@ number2 = 3
 
 output = add(number1,number2)
 puts output
+
+puts output

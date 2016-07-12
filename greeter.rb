@@ -15,5 +15,8 @@ puts "Enter #:"
 num = gets.chomp
 output = by_three?(num.to_i)
 puts output
+<<<<<<< HEAD
 
 end
+=======
+>>>>>>> 43ea0ee609d5c719de6c057ede0585b623c91569
