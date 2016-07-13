@@ -5,4 +5,11 @@ books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
 
 # Sort your books in descending order, in-place below
 
-books.sort! -1
+sort1 = books.sort! { -1 }
+puts sort1
+puts
+sort2 = books.sort! { 1 }
+puts sort2
+puts
+sort3 = books.sort! { 0 }
+puts sort3
