@@ -1,37 +1,20 @@
 class Foo
-  attr_reader :color
-  attr_writer :color
-  def initialize(color)
+  attr_accessor :color
+    def initialize(color)
     @color = color
   end
 end
-
-class Bar
-  def initialize(color)
-    @color = color
-  end
-
-  def color
-    @color
-  end
-end
-
-class Baz
-  def initialize(color)
-    @color = color
-  end
-
-  def color
-    @color
-  end
-
-  def color=(value)
-    @color = value
-  end
-end
-
 
 
 f = Foo.new("red")
-f.color! # NoMethodError: undefined method ‘color’
-print f.color
+puts f.color
+f = Foo.new("blue")
+puts f.color
+
+
+def hello(name)
+  return "#{name} is awesome."
+end
+
+puts hello "Mike"
+puts hello "Barney Stinson"
