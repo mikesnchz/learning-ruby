@@ -53,3 +53,4 @@ checking_account = Account.new("Mike",250_000)
 checking_account.display_balance(1234)
 checking_account.deposit(1234,500_000)
 checking_account.withdraw(1234,251_000)
+puts "Mike just learned Git."
