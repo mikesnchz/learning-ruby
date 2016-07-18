@@ -19,10 +19,10 @@ class Account
     def withdraw(pin_number,amount)
         if pin_number == pin
             if amount > @balance
-                puts "You cannot withdraw more than your balance. Current balance: Php#{@balance}."
+                puts "You cannot withdraw more than your balance. Current balance: Php#{balance}."
             else
             @balance -= amount
-            puts "Withdrew Php#{amount}. New balance: Php#{@balance}."
+            puts "Withdrew Php#{amount}. New balance: Php#{balance}."
             end
         else
             puts pin_error
@@ -32,7 +32,7 @@ class Account
     def deposit(pin_number,amount)
         if pin_number == pin
             @balance += amount
-            puts "Deposited Php#{amount}. New balance: Php#{@balance}."
+            puts "Deposited Php#{amount}. New balance: Php#{balance}."
         else
             puts pin_error
         end
@@ -50,5 +50,6 @@ class Account
 end
 
 checking_account = Account.new("Mike",250_000)
+checking_account.display_balance(1234)
 checking_account.deposit(1234,500_000)
 checking_account.withdraw(1234,251_000)
